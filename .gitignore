@@ -1,0 +1,7 @@
+PUZZLEHUNT
+build
+bin
+.gradle
+.nb-gradle
+.vscode
+derby.log
