@@ -41,14 +41,14 @@ import org.apache.derby.drda.NetworkServerControl;
  *
  * In particular, this sample program 1) starts the Derby Network Server using a
  * property and also loads the embedded driver 2)	checks if the Derby Network
- * Server is up and running 3)	creates the database 'NSSimpleDB' if not already
+ * Server is up and running 3)	creates the database 'PUZZLEHUNT' if not already
  * created 4)	obtains an embedded database connection 5)	tests the database
  * connection by executing a sample query 6)	allows for client connections to
  * connect to the server until the user decides to stop the server and exit the
  * program 7)	closes the connections 8)	shuts down the Derby Network Server
  * before exiting the program.
  *
- * Note: On running this program, there will be a NSSimpleDB database directory
+ * Note: On running this program, there will be a PUZZLEHUNT database directory
  * created if not present already, and there will be a derby.log file which
  * contains messages from Derby.
  *

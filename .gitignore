@@ -5,3 +5,4 @@ bin
 .nb-gradle
 .vscode
 derby.log
+.project
