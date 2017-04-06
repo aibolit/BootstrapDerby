@@ -6,3 +6,5 @@ bin
 .vscode
 derby.log
 .project
+.settings
+.classpath
