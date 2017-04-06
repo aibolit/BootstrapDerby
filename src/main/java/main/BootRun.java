@@ -185,9 +185,9 @@ public class BootRun {
         System.out.println("Testing if Network Server is up and running!");
         for (int i = 0; i < 10; i++) {
             try {
-
-                Thread.currentThread().sleep(5000);
                 server.ping();
+                Thread.sleep(1000);
+                break;
             } catch (Exception e) {
                 System.out.println("Try #" + i + " " + e.toString());
                 if (i == 9) {
@@ -281,7 +281,7 @@ public class BootRun {
 
         String ijUsage = "\nWhile my app is busy with embedded work, ";
         ijUsage += "ij might connect like this:\n\n";
-        ijUsage += "\t$ java -Dij.user=me -Dij.password=pw -Dij.protocol=jdbc:derby://localhost:1527/ org.apache.derby.tools.ij\n";
+        ijUsage += "\t$ java -Dij.user=apple -Dij.password=cherry -Dij.protocol=jdbc:derby://localhost:1527/ org.apache.derby.tools.ij\n";
         ijUsage += "\tij> connect '" + DBNAME + "';\n\n";
 
         return ijUsage;
