@@ -262,14 +262,9 @@ public class BootRun {
      */
     private static void waitForExit() throws Exception {
         System.out.println("Clients can continue to connect: ");
-        BufferedReader in
-                = new BufferedReader(new InputStreamReader(System.in));
         //System.out.println("Type quit[Enter] to stop Server");
         while (true) {
-            String st = in.readLine();
-            if (st != null && st.equals("quit")) {
-                break;
-            }
+            Thread.sleep(1000);
         }
     }
 
