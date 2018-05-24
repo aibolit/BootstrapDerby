@@ -8,3 +8,6 @@ derby.log
 .project
 .settings
 .classpath
+*.iml
+.idea
+out
